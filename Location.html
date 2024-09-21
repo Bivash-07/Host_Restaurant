@@ -7,43 +7,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Location</title>
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+      /* Optional: light background for contrast */
+    }
+
     .topnav {
-      overflow: hidden;
-      background-color: #800000;
+      width: 100%;
       display: flex;
-      justify-content: end;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(163, 1, 1, 0.7);
+      padding: 15px;
+      /* Added horizontal padding */
+      position: fixed;
+      /* Keep navbar fixed on top */
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      /* Ensure it appears above other elements */
     }
 
     .topnav a {
-      float: left;
-      display: block;
       color: white;
       text-align: center;
-      padding: 14px 16px;
+      /* padding: 14px 16px; */
       text-decoration: none;
-      font-size: 17px;
+      font-size: 18px;
+      padding: 0px 25px;
     }
 
     .topnav a:hover {
-      background-color: #800000;
       color: black;
     }
 
-    body {
-      font-family: Arial;
-      margin: 8px;
+    .logo {
+      font-size: 24px;
+      color: white;
+      font-weight: bold;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    ul li {
+      padding: 0px 15px;
+    }
+
+    .footerb {
+      padding-top: 60px;
+      width: 100%;
+    }
+
+
+    @media (max-width: 768px) {
+
+      .logo {
+        font-size: 20px;
+      }
+
+      .topnav ul {
+        flex-direction: column;
+        padding: 0px 30px 0px 100px;
+      }
+
+      ul li {
+        padding: 10px 0;
+      }
+
+      .topnav a {
+        padding: 10px;
+        /* More vertical space for links */
+      }
+
+      .footerb {
+        padding-top: 200px;
+        width: 100%;
+      }
     }
   </style>
 </head>
 
 <body>
   <div class="topnav">
-    <a href="index.html"> HOME</a>
-    <a href="About.html"> ABOUT</a>
-    <a href="Menu.html"> MENU</a>
-    <a href="Location.html"> LOCATION</a>
+    <div class="logo">B S Restaurant</div>
+    <ul>
+      <a href="index.html"> HOME</a>
+      <a href="About.html"> ABOUT</a>
+      <a href="Menu.html"> MENU</a>
+      <a href="Location.html"> LOCATION</a>
+    </ul>
   </div>
   <br><br>
+
   <div class="footerb">
     <b>Map:</b>
     <br><br>
@@ -56,10 +118,12 @@
   <!---- Code for location----->
   <div class="footerb">
     <br><br>
-    <b>Address:</b>Jalandhar - Delhi, Grand Trunk Road, Phagwara, Punjab 144001<br>
-    <b>Email:</b>bsrestaurant@gmail.com<br>
-    <b>Mobile:</b>0182 440 4404<br>
-    <b>Time:</b>9:00AM to 10:00PM<br>
+    <center>
+      <b>Address:</b>Jalandhar - Delhi, Grand Trunk Road, Phagwara, Punjab 144001<br>
+      <b>Email:</b>bsrestaurant@gmail.com<br>
+      <b>Mobile:</b>0182 440 4404<br>
+      <b>Time:</b>9:00AM to 10:00PM<br>
+    </center>
     <br><br>
   </div>
 
